@@ -10,7 +10,7 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 mongoose
-  .connect("mongodb://localhost/householdexpenses")
+  .connect("mongodb+srv://Varshaah:1234@cluster0.cl50hxc.mongodb.net/?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true})
   .then(() => console.log("connected to MongoDB"))
   .catch((err) => console.error("could not connect to MongoDB: ", err));
 
